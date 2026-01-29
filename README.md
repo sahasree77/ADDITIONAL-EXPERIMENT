@@ -91,3 +91,75 @@ f.generate();
 ```
 # OUTPUT
 ![ADDITIONALEXP 2 OUTPUT](exp_additional2_output.png)
+
+# Additional3
+# TITLE: Additional-3. ) Java program to determine if a given string is palindrome or not
+```
+import java.util.Scanner;
+
+class Palindrome {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the string: ");
+        String str = sc.nextLine();
+
+        int start = 0;
+        int end = str.length() - 1;
+        boolean flag = true;
+
+        while (start < end) {
+
+            if (str.charAt(start) != str.charAt(end)) {
+                flag = false;
+                break;
+            }
+
+            start++;
+            end--;
+        }
+
+        if (flag) {
+            System.out.println("String is a palindrome");
+
+        }
+    }
+}
+
+# OUTPUT
+![ADDITIONALEXP 3 OUTPUT](exp_additional-3.png)
+
+# Additional-4
+# TITLE: Additional-4 Java program to check if a number is a perfect number
+```
+import java.util.Scanner;
+
+class Perfect {
+
+    public static void main(String args[]) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the positive number: ");
+        int num = sc.nextInt();
+
+        int sum = 0;
+
+        for (int i = 1; i < num; i++) {
+
+            if (num % i == 0) {
+                sum = sum + i;
+            }
+        }
+
+        if (sum == num) {
+            System.out.println("num is a perfect number");
+        }
+        else {
+            System.out.println("num is not a perfect number");
+        }
+    }
+    # OUTPUT
+![ADDITIONALEXP 3 OUTPUT](exp_additional-4.png)
